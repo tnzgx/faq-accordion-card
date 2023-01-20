@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 320px;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    margin: 2rem 1.5rem;
+}
+
+.left .woman {
+    width: 90%;
+    max-width: 20rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -125%);
+}
+
+.left .box {
+    display: none;
+    position: absolute;
+}
+
+.left .pattern {
+    width: 90%;
+    max-width: 20rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+.card .right .header h1 {
+    min-width: 100%;
+    font-size: 260%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.question {
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+
+.question button {
+    min-width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: hsl(238, 29%, 16%);
+    font-weight: 400;
+    position: sticky;
+}
+
+.question .answer {
+    display: none;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+}
+
+button p {
+    padding-right: 1rem;
+}
+
+button:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+button:focus {
+    font-weight: 700;
+}
+
+@media (min-width: 500px) {
+    .card {
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+        padding: 5rem 0;
+        padding-left: 35rem;
+        padding-right: 6rem;
+    }
+
+    .card .right .header h1 {
+        text-align: start;
+    }
+
+    .left .woman {
+        content: url(./images/illustration-woman-online-desktop.svg);
+        max-width: 32rem;
+        top: 50%;
+        transform: translate(-110%, -50%);
+    }
+
+    .left .box {
+        aspect-ratio: 1/1;
+        display: block;
+        max-width: 14rem;
+        top: 50%;
+        transform: translate(-293%, -25%);
+    }
+
+    .left .pattern {
+        content: url(./images/bg-pattern-desktop.svg);
+        max-width: 32rem;
+        top: 50%;
+        transform: translate(-110%, -45%);
+    }
+
+}
+
+
